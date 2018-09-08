@@ -145,7 +145,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # Define the board with values that should create the desired output
       # *** Edit the line below ***
-      board = ["X", " ", " ", " ", " ", " ", " ", " ", " "] # This is not correct
+      board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"] 
 
       # Don't touch the following lines.
       output = capture_puts{ display_board(board) } if defined?(display_board)
@@ -165,7 +165,7 @@ describe "#display_board in 'lib/display_board.rb" do
 
       # *** Edit the lines below ***
       # *** Uncomment the lines below ***
-      # expect(rows[0]).to eq("   |   |   ")
+      expect(rows[0]).to eq("   |   |   ")
       # expect(rows[1]).to eq("-----------")
       # expect(rows[2]).to eq("   |   |   ")
       # expect(rows[3]).to eq("-----------")
